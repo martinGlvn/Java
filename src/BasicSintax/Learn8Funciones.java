@@ -14,7 +14,7 @@ public class Learn8Funciones {
         imprimirSaludo("Martin");
         sumarDatos(50, 90);
 
-
+        System.out.println();
     }
     static void imprimeDatos(){
         System.out.println("Probando Funciones");

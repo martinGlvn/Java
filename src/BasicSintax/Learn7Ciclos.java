@@ -92,8 +92,36 @@ public class Learn7Ciclos {
         }
         System.out.println(total);
 
-        
-        
+
+        //For
+        for (int i = 0; i < 2; i++) {
+            System.out.println("hola mundo");
+        }
+
+        String[] nombres = {"Martin", "Ignacio", "Roberto"};
+        for (int i = 0; i < nombres.length; i++) {
+            System.out.println(nombres[i]);
+        }
+
+        int suma = 0;
+        int[] numeros = {5, 9, 10};
+        for (int i = 0; i < numeros.length; i++) {
+            suma = suma + numeros[i];
+        }
+
+        //For Each =>
+
+        String[] nombres2 = {"Martin", "Ignacio", "Roberto"};
+        for (String nombre : nombres2) {
+            System.out.println(nombre);
+        }
+
+        int suma2 = 0;
+        int[] numeros2 = {10,50,22};
+        for (int numero : numeros2){
+            suma2 += numero;
+        }
+        System.out.println(suma2);
 
         
 

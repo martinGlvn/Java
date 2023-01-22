@@ -44,22 +44,17 @@ public class Learn5Condicionales {
         String operation = scanner.nextLine();
 
         //Realizamos los calculos dependiendo la operacion que desee el usuario =>
-        if(operation.equals("suma")){
+        if (operation.equals("suma")) {
             System.out.printf("El resultado de la suma de %f + %f = %f", number1, number2, number1 + number2);
-        }
-        else if(operation.equals("resta")){
+        } else if (operation.equals("resta")) {
             System.out.printf("El resultado de la resta de %f - %f = %f", number1, number2, number1 - number2);
-        }
-        else if(operation.equals("multiplicacion")){
+        } else if (operation.equals("multiplicacion")) {
             System.out.printf("El resultado de la resta de %f * %f = %f", number1, number2, number1 * number2);
-        }
-        else if(operation.equals("division")){
+        } else if (operation.equals("division")) {
             System.out.printf("El resultado de la resta de %f / %f = %f", number1, number2, number1 / number2);
-        }
-        else{
+        } else {
             System.out.printf("%s la operacion requerida no esta permitida", operation);
         }
-
 
 
         //Para mejorar el rendimiento y eficiencia de nuestro codigo podriamos utilizar "SWITCH"
@@ -78,16 +73,21 @@ public class Learn5Condicionales {
         System.out.print("Que operacion deseas realizar? "); //Preguntamos al usuario
         String operacion = scanner2.nextLine();
 
+
         //Switch permite evaluar casos posibles en este caso "sum" y "sub"
-        switch (operacion){
-            case "sum" :
+        switch (operacion) {
+            case "sum":
                 System.out.printf("El resultado de la suma de %f + %f = %f", numero1, numero2, numero1 + numero2);
                 break; //El break frena el ciclo una vez finaliza esta condicion
             case "sub":
                 System.out.printf("El resultado de la suma de %f - %f = %f", numero1, numero2, numero1 - numero2);
                 break; //El break frena el ciclo una vez finaliza esta condicion
             //Default se ejecutara si ningun caso se establece x parte del usuario en este caso!!!
-            default: System.out.printf("%s la operacion requerida no esta permitida", operation);
+            default:
+                System.out.printf("%s la operacion requerida no esta permitida", operation);
         }
+
+
+
     }
 }
