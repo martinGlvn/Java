@@ -6,14 +6,29 @@ import java.util.ArrayList;
 
 //Definimos nuestra clase a utilzar =>
 public class User {
-    public String name; //Nombre de usuario
-    public LocalDate birthDay; //Tipo de dato especial que almacenara el cumpleaños del usuario
-    public ArrayList<Book> books = new ArrayList<Book>();
+    private String name; //Nombre de usuario
+    private LocalDate birthDay; //Tipo de dato especial que almacenara el cumpleaños del usuario
+    private ArrayList<Book> books = new ArrayList<Book>();
+
+    User(String name, String birthDay){
+        this.name = name;
+        this.birthDay = LocalDate.parse(birthDay);
+    }
+
+    public String getName(){
+        return this.name;
+    }
+    public String getBirthDay(){
+        return this.birthDay.toString();
+    }
+
+    public String borrowedBooks(){
+        return this.books.toString();
+    }
 
     public void borrow(Book book) {
         this.books.add(book);
     }
-
     public int age() {
         int age = Period.between(this.birthDay, LocalDate.now()).getYears();
         return age;
