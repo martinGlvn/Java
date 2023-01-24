@@ -12,7 +12,8 @@ public class CrearCuenta {
         segundaCuenta.saldo = 500;
         System.out.println(segundaCuenta.saldo);
 
-        //SECCION 3 DEL CURSO =>
+
+
     }
 
 
