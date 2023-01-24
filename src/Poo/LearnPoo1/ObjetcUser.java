@@ -1,4 +1,4 @@
-package Poo;
+package Poo.LearnPoo1;
 
 public class ObjetcUser {
     public static void main(String[] args) {

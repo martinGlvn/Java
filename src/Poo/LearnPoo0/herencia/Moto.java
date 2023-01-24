@@ -1,6 +1,6 @@
-package Poo.herencia;
+package Poo.LearnPoo0.herencia;
 
-import Poo.clases.Vehiculo;
+import Poo.LearnPoo0.clases.Vehiculo;
 
 public class Moto extends Vehiculo {
 

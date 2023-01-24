@@ -1,4 +1,4 @@
-package Poo.clases;
+package Poo.LearnPoo0.clases;
 
 public class class1 {
 
