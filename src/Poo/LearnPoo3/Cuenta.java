@@ -4,7 +4,9 @@ public class Cuenta {
     double saldo;
     int agencia;
     int numero;
-    String titular;
+    Cliente titular;
+
+
 
     /* Metodos =>
      * 1- El metodo Depositar nos permite sumar dinero a nuestra cuenta atraves de la viable valor
